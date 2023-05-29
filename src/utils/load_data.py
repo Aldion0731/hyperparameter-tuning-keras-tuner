@@ -12,8 +12,8 @@ class MnistData:
     y_test: np.ndarray
 
     def preprocess(self):
-        self.X_train = self.x_train / 255
-        self.X_test = self.X_test / 255
+        self.X_train = self.x_train / 255.0
+        self.X_test = self.X_test / 255.0
 
 
 def load_data():
